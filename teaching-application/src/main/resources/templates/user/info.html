@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>userInfo</title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <script th:src="@{/layui/layui.js}"></script>
+    <script th:src="@{/js/user/info.js}"></script>
+</head>
+<body>
+<div class="layui-container" style="padding: 25px">
+    <form class="layui-form" action="">
+        <input name="id" type="hidden" th:value="${user?.id}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">头像：</label>
+            <div class="layui-input-block">
+                <img th:src="${user?.icon}" id="iconPre" style="width: 60px;height: 60px;border-radius: 50%;">
+                <button type="button" class="layui-btn" id="uploadIcon">
+                    <i class="layui-icon">&#xe67c;</i>上传图片
+                </button>
+                <input name="icon" type="hidden" th:value="${user?.icon}" id="iconImg">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名：</label>
+            <div class="layui-input-block">
+                <input name="username" type="text" th:value="${user?.username}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">昵称：</label>
+            <div class="layui-input-block">
+                <input name="nickname" type="text" th:value="${user?.nickname}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别：</label>
+            <div class="layui-input-block">
+                <select name="userGender" th:value="${user?.userGender}">
+                    <option value="0" disabled>选择性别</option>
+                    <option th:selected="${user?.userGender} == '1'" value="1">男</option>
+                    <option th:selected="${user?.userGender} == '2'" value="2">女</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">工号/学号：</label>
+            <div class="layui-input-block">
+                <input name="accountNumber" type="text" th:value="${user?.accountNumber}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">学校：</label>
+            <div class="layui-input-block">
+                <input name="school" type="text" th:value="${user?.school}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">院系：</label>
+            <div class="layui-input-block">
+                <input name="userCollege" type="text" th:value="${user?.userCollege}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">专业：</label>
+            <div class="layui-input-block">
+                <input name="userMajor" type="text" th:value="${user?.userMajor}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">班级：</label>
+            <div class="layui-input-block">
+                <input name="userClass" type="text" th:value="${user?.userClass}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">角色：</label>
+            <div class="layui-input-block">
+                <select name="userRole" id="userRole" th:value="${user?.userRole}" class="layui-select">
+                    <option value="0" disabled>选择角色</option>
+                    <option th:selected="${user?.userRole} == '1'" value="1">老师</option>
+                    <option th:selected="${user?.userRole} == '2'" value="2">学生</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">邮箱：</label>
+            <div class="layui-input-block">
+                <input name="mailbox" type="text" th:value="${user?.mailbox}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机：</label>
+            <div class="layui-input-block">
+                <input name="phoneNumber" type="text" th:value="${user?.phoneNumber}" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="userInfo">立即提交</button>
+                <a href="javascript:;" class="layui-btn layui-btn-primary cancerBtn">取消</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

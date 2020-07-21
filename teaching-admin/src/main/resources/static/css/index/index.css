@@ -1,0 +1,118 @@
+body{background-color: #eee;}
+.site-banner {
+    position: relative;
+    height: 600px;
+    text-align: center;
+    overflow: hidden;
+    background-image: url("http://39.98.107.34/group1/M00/00/00/rBpdwl8TKReASXf2AAYmFHyBqEs633.jpg");
+    background-size: 100% 100%;
+    filter: contrast(0.7);
+}
+
+.site-logo {
+    padding-top: 110px;
+    height: 220px;
+}
+
+.site-logo-img {
+    width: 220px;
+    height: 220px;
+}
+.site-logo-icon{
+    position: absolute;
+    left: 50%;
+    top: 170px;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    font-size: 180px;
+    color: rgba(255,255,255,.7);
+}
+
+.site-desc {
+    position: relative;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.site-desc-title {
+    color: rgba(255, 255, 255, .8);
+    font-size: 61px;
+}
+
+.site-desc-detail {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    color: #c2c2c2;
+    font-style: normal;
+}
+
+.site-enter {
+    margin-top: 80px;
+    font-size: 0;
+}
+
+.enter-icon{
+    font-size: 24px;
+}
+
+.site-enter-go {
+    display: inline;
+    position: relative;
+    padding: 10px;
+    height: 65px;
+    line-height: 65px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    /*border-color: rgba(255,255,255,.2);*/
+    font-size: 24px !important;
+    color: #ccc;
+    transition: all 0.5s;
+}
+
+.site-enter-go:hover {
+    border-radius: 20px;
+}
+.site-footer{
+    padding: 30px 0;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    font-weight: 300;
+}
+.site-idea{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.site-idea-list{
+    margin: 50px 0;
+    font-size: 0;
+    text-align: center;
+    font-weight: 300;
+}
+.site-idea-list li:first-child{
+    margin-left: 0;
+}
+.site-idea-list li{
+    list-style: none;
+    width: 298px;
+    height: 150px;
+    padding: 30px;
+    line-height: 24px;
+    margin-left: 30px;
+    border: 1px solid #d2d2d2;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}
+.idea-item-title{
+    margin: 0 20px 20px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+.site-footer{
+    text-align: center;
+}

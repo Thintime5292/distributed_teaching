@@ -1,0 +1,38 @@
+.body-login {
+    width: 100%;
+    height: 800px;
+    /*background: #1E9FFF;*/
+    background-image: url("http://39.98.107.34/group1/M00/00/00/rBpdwl8TKReASXf2AAYmFHyBqEs633.jpg");
+    background-size: 100% 100%;
+}
+
+.red-border {
+    border-color: red;
+}
+
+.green-border {
+    border-color: lightgreen;
+}
+
+.frame {
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    width: 500px;
+    margin-left: -250px;
+    margin-top: -200px;
+
+}
+
+.frame .log_win {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 20px #444;
+}
+
+.register-nav {
+    float: right;
+    color: gray;
+    margin-bottom: 15px;
+}

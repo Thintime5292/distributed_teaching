@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>分布式教学平台</title>
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <link rel="stylesheet" th:href="@{/css/index/index.css}">
+    <script th:src="@{/layui/layui.js}"></script>
+    <script th:src="@{/js/index/index.js}"></script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo"><span class="layui-icon layui-icon-read"></span>Teaching</div>
+        <!-- 头部区域（可配合layui已有的水平导航） -->
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img th:src="@{${user?.icon}}" class="layui-nav-img">
+                    <span class="nickname" th:text="${user?.nickname}">贤心</span>
+                    <span class="layui-badge-dot"></span>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;" class="my-info">我的资料</a></dd>
+                    <dd><a href="javascript:;" class="update-pwd">修改密码</a></dd>
+                    <dd><a href="javascript:;" class="message">通知·信息<span class="layui-badge-dot"></span>&nbsp;&nbsp;</a></dd>
+                    <dd><a href="javascript:;" class="logout">退出登录</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a title="后台管理" href="http://www.teaching.com:9987/admin" >
+                    <span class="layui-icon layui-icon-set-fill"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div class="site-banner">
+            <div class="site-logo">
+<!--                <img src="http://39.98.107.34/group1/M00/00/00/rBpdwl8TvnGAONZRAAyUg_YsKK0604.png"-->
+<!--                     alt=""-->
+<!--                     class="site-logo-img"-->
+<!--                >-->
+                <span class="layui-icon layui-icon-read site-logo-icon layui-anim-rotate"></span>
+            </div>
+            <div class="site-desc">
+                <p class="site-desc-title layui-anim-scaleSpring">分布式教学平台</p>
+                <p class="site-desc-detail layui-anim-upbit">不改变教学习惯，让课堂更精彩，让教学更高效！</p>
+            </div>
+            <div class="site-enter">
+                <a href="/home/index" class="site-enter-go"><span class="layui-icon layui-icon-app enter-icon"></span>进入平台</a>
+            </div>
+        </div>
+        <div class="site-idea">
+            <ul class="site-idea-list">
+                <li>
+                    <div class="layui-elem-field layui-field-title">
+                        <p class="idea-item-title">极简教学</p>
+                        <p class="idea-item-text">无安装，无插件，无需专门学习；掌握简单，三分钟上手；不改变教学习惯，让课堂更精彩，让教学更高效！</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="layui-elem-field layui-field-title">
+                        <p class="idea-item-title">作业神器</p>
+                        <p class="idea-item-text">作业在线展示和批阅，随时随地批改作业！</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="layui-elem-field layui-field-title">
+                        <p class="idea-item-title">成绩管理</p>
+                        <p class="idea-item-text">汇总考勤、表现、作业、测试、平时成绩、期末成绩；自由调整成绩权重，汇总最终教学成绩，科学权威！</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-footer site-footer">
+        <!-- 底部固定区域 -->
+        © teaching.club - zhp license
+    </div>
+</div>
+</body>
+</html>
