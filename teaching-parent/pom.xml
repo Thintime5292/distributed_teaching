@@ -30,7 +30,7 @@
         <batik-ext.version>1.7</batik-ext.version>
         <jsoup.version>1.11.3</jsoup.version>
         <jjwt.version>0.9.0</jjwt.version>
-        <httpclient.version>4.5.2</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <commons-lang3.verson>3.9</commons-lang3.verson>
         <tkmybatis.version>4.1.5</tkmybatis.version>
         <mapper-spring-boot-starter.version>2.1.5</mapper-spring-boot-starter.version>
